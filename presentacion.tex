@@ -1,0 +1,49 @@
+\documentclass[11pt]{beamer}
+\usetheme{unicauca}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{colortbl}
+\author{Jhon Jairo Alvarez Londoño}
+\title{Mi exposición en Latex}
+%\setbeamercovered{transparent} 
+%\setbeamertemplate{navigation symbols}{} 
+\logo{\includegraphics[scale=0.1]{logo-unicauca.png}} 
+\institute{Universidad del cauca} 
+%\date{} 
+%\subject{Mi descripción}
+
+\begin{document}
+
+%********************PRIMERA DIAPOSITIVA********************
+\usebackgroundtemplate{\includegraphics[width=\paperwidth, trim = -8.15cm 50.5cm 0 0]{fondo-primera-y-ultima-diapositiva.png}}
+\begin{frame}
+%Transición de un frame a otro
+\transdissolve
+\titlepage
+\end{frame}
+
+%*******************DIAPOSITIVAS RESTANTES********************
+\usebackgroundtemplate{\includegraphics[width=\paperwidth, trim = -8.15cm 50.5cm 0 0]{fondo-resto-de-diapositivas.png}}
+\begin{frame} {Tabla de contenido}
+\transdissolve
+\tableofcontents
+\end{frame}
+
+\begin{frame}{Mi primer frame}
+\transdissolve
+
+\end{frame}
+
+%*******************ULTIMA DIAPOSITIVA********************
+\usebackgroundtemplate{\includegraphics[width=\paperwidth, trim = -8.15cm 50.5cm 0 0]{fondo-primera-y-ultima-diapositiva.png}}
+\begin{frame}{¡Gracias!}
+%Transición de un frame a otro
+\transdissolve
+\titlepage
+\end{frame}
+\end{document}

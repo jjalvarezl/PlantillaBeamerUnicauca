@@ -1,0 +1,12 @@
+*.bak
+*.bbl
+*.log
+*.dvi
+*.synctex.gz
+*.aux
+*.blg
+*.out
+*.lock
+*.nav
+*.toc
+*.snm

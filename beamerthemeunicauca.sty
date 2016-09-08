@@ -1,0 +1,28 @@
+% Copyright 2007 by Till Tantau
+%
+% This file may be distributed and/or modified
+%
+% 1. under the LaTeX Project Public License and/or
+% 2. under the GNU Public License.
+%
+% See the file doc/licenses/LICENSE for more details.
+
+\DeclareOptionBeamer{hideothersubsections}{\PassOptionsToPackage{hideothersubsections=#1}{beamerouterthemeunicauca}}
+\DeclareOptionBeamer{hideallsubsections}{\PassOptionsToPackage{hideallsubsections=#1}{beamerouterthemeunicauca}}
+
+\DeclareOptionBeamer{width}{\PassOptionsToPackage{width=#1}{beamerouterthemeunicauca}}
+\DeclareOptionBeamer{left}{\PassOptionsToPackage{left}{beamerouterthemeunicauca}}
+\DeclareOptionBeamer{right}{\PassOptionsToPackage{right}{beamerouterthemeunicauca}}
+\ProcessOptionsBeamer
+
+\mode<presentation>
+
+\useoutertheme{unicauca}
+\useinnertheme[shadow=false]{unicauca}
+\usecolortheme{unicauca}
+
+\setbeamercolor*{frametitle}{bg=red!90!black}
+\setbeamerfont{block title}{size={}}
+
+\mode
+<all>
