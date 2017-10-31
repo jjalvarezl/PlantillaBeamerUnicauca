@@ -8,6 +8,7 @@
 \usepackage{graphicx}
 \usepackage{pgfplots}
 \usepackage{colortbl}
+
 \author{Jhon Jairo Alvarez Londoño}
 \title{Mi exposición en Latex}
 %\setbeamercovered{transparent} 
@@ -15,9 +16,47 @@
 \logo{\includegraphics[scale=0.1]{logo-unicauca.png}} 
 \institute{Universidad del cauca} 
 %\date{} 
-%\subject{Mi descripción}
+\subtitle{Mi subtitulo}
+
+%Volviendo a configurar la página de los titulos 
+%para cambiar sus posiciones respecto a la nueva 
+%imagen de fondo.
+\setbeamertemplate{title page}
+{
+  \vbox{}
+  \begingroup
+    \centering
+    \vskip-55pt
+    \begin{beamercolorbox}[rounded=true,sep=5pt,center]{title}
+      \usebeamerfont{title}\inserttitle\par%
+      \ifx\insertsubtitle\@empty%
+      \else%
+        \vskip0.25em%
+        {\usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}\insertsubtitle\par}%
+      \fi%
+    \end{beamercolorbox}%
+    %\vskip1em\par
+    \vskip-3pt
+    \begin{beamercolorbox}[sep=8pt]{author}
+      \usebeamerfont{author}{\color{white}{\insertauthor}}
+    \end{beamercolorbox}
+    \vskip-12pt
+    \begin{beamercolorbox}[sep=8pt]{institute}
+      \usebeamerfont{institute}{\color{white}{\insertinstitute}}
+    \end{beamercolorbox}
+    \vskip-12pt
+    \begin{beamercolorbox}[sep=8pt]{date}
+      \usebeamerfont{date}{\color{white}{\insertdate}}
+    \end{beamercolorbox}
+  \endgroup
+  \vfill
+}
+
 
 \begin{document}
+
+%Seteando el color del titulo del frame
+\setbeamercolor{frametitle}{fg=white}
 
 %********************PRIMERA DIAPOSITIVA********************
 \usebackgroundtemplate{\includegraphics[width=\paperwidth, trim = -8.15cm 50.5cm 0 0]{fondo-primera-y-ultima-diapositiva.png}}
@@ -36,7 +75,9 @@
 
 \begin{frame}{Mi primer frame}
 \transdissolve
-
+Mi texto de prueba
+\\~
+\alert{mi texto de alerta}
 \end{frame}
 
 %*******************ULTIMA DIAPOSITIVA********************
