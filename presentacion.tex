@@ -17,6 +17,7 @@
 \institute{Universidad del cauca} 
 %\date{} 
 \subtitle{Mi subtitulo}
+\graphicspath{{./figuras/} {./fondoDiapositivas/}}
 
 %Volviendo a configurar la página de los titulos 
 %para cambiar sus posiciones respecto a la nueva 
@@ -59,7 +60,7 @@
 \setbeamercolor{frametitle}{fg=white}
 
 %********************PRIMERA DIAPOSITIVA********************
-\usebackgroundtemplate{\includegraphics[width=\paperwidth, trim = -8.15cm 50.5cm 0 0]{fondo-primera-y-ultima-diapositiva.png}}
+\usebackgroundtemplate{\includegraphics[width=\paperwidth, trim = -8.15cm 0cm 0cm -8cm]{fondo-primera-y-ultima-diapositiva.png}}
 \begin{frame}
 %Transición de un frame a otro
 \transdissolve
@@ -67,7 +68,7 @@
 \end{frame}
 
 %*******************DIAPOSITIVAS RESTANTES********************
-\usebackgroundtemplate{\includegraphics[width=\paperwidth, trim = -8.15cm 50.5cm 0 0]{fondo-resto-de-diapositivas.png}}
+\usebackgroundtemplate{\includegraphics[width=\paperwidth, trim = -8.15cm 0cm 0cm -8cm]{fondo-resto-de-diapositivas.png}}
 \begin{frame} {Tabla de contenido}
 \transdissolve
 \tableofcontents
@@ -78,10 +79,12 @@
 Mi texto de prueba
 \\~
 \alert{mi texto de alerta}
+
+\includegraphics{proceso.pdf}
 \end{frame}
 
 %*******************ULTIMA DIAPOSITIVA********************
-\usebackgroundtemplate{\includegraphics[width=\paperwidth, trim = -8.15cm 50.5cm 0 0]{fondo-primera-y-ultima-diapositiva.png}}
+\usebackgroundtemplate{\includegraphics[width=\paperwidth, trim = -8.15cm 0cm 0cm -8cm]{fondo-primera-y-ultima-diapositiva.png}}
 \begin{frame}{¡Gracias!}
 %Transición de un frame a otro
 \transdissolve
